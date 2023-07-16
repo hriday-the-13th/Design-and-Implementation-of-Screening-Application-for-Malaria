@@ -1,0 +1,113 @@
+/* home.css */
+
+/* Main container */
+.mainContainer {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  
+  background-image: url("/static/img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+/* Content */
+.content {
+  border: 2px solid rgb(14, 77, 146);
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 500px;
+  margin: 10px auto;
+}
+
+/* Headings */
+.headings {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(14, 77, 146);
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.headings img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 5px;
+}
+
+.headings img:first-child {
+  width: 150px;
+}
+
+.headings img:last-child {
+  width: 200px;
+}
+
+/* Application name */
+#appName {
+  margin-bottom: 20px;
+}
+
+/* Form container */
+.formContainer {
+  margin-bottom: 20px;
+}
+
+/* Form */
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="file"] {
+  margin-right: 10px;
+  
+}
+
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Uploaded image */
+img[src="{{url}}"] {
+  display: block;
+  margin: 0 auto;
+  max-width: 500px;
+  max-height: 500px;
+  margin-bottom: 20px;
+}
+
+/* Print content */
+#output {
+  margin-top: 20px;
+}
+/* Define custom font */
+@font-face {
+  font-family: 'CustomFont';
+  src: url('/static/fonts/custom-font.ttf') format('truetype');
+}
+
+/* Apply custom font to H1 headers */
+h1 {
+  font-family: 'CustomFont', sans-serif;
+  /* Add other desired font properties */
+  background-color: rgb(14, 77, 146);
+  color: white;
+  padding: 10px;
+  margin: 0;
+  border-radius: 5px;
+}
